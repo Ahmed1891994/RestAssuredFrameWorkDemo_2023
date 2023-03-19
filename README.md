@@ -23,7 +23,7 @@ The example below shows how to run the test for each pipeline stage:
 This project uses Allure Report to automatically generate the test report.
 There are some configuration to make it happen:
 * aspectj configuration on `pom.xml` file
-* `allure.properties` file on `src/test/resources`
+* `allure.properties` file on `src/main/resources`
 
 You can use the command line to generate it in two ways:
 * `mvn allure:serve`: will open the HTML report into the browser
