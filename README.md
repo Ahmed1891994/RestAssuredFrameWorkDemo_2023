@@ -31,15 +31,25 @@ You can use the command line to generate it in two ways:
 
 ## About the Project Structure
 --src/main/java
+
 ------api/client
+
 ------api/Pojos
+
 ------api/Routes
+
 ------utils/manager
+
 ------utils/configurations
+
 ------utils/fakers
+
 --src/main/resources
+
 ------.properties
+
 --src/test/java
+
 ------tests
 
 ### src/main/java
