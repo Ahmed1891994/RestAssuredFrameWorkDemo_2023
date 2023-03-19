@@ -30,6 +30,17 @@ You can use the command line to generate it in two ways:
 * `mvn allure:report`: will generate the HTML port at `target/site/allure-maven-plugin` folder
 
 ## About the Project Structure
+--src/main/java
+------api/client
+------api/Pojos
+------api/Routes
+------utils/manager
+------utils/configurations
+------utils/fakers
+--src/main/resources
+------.properties
+--src/test/java
+------tests
 
 ### src/main/java
 #### api/client
@@ -37,6 +48,7 @@ Classes that do some actions in specific endpoints.
 
 #### api/Pojos
 POJOs classes can be used to simplify testing. By creating POJOs to represent the request or response json
+
 #### api/Routes
 Contains classes for each endpoint which has any hardcoded routes
 
@@ -53,6 +65,8 @@ used to create fakedata "normally it shouldn't be used cause in testing u need t
 has all properties files needed like (environment conf,allure)
 
 ### src/test/java
+
+#### tests
 Classes need to be tested
 
 ## Libraries
