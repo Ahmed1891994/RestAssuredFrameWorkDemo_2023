@@ -1,6 +1,6 @@
-package com.spotify.oauth2.api;
+package com.spotify.oauth2.api.manager;
 
-import com.spotify.oauth2.utils.ConfigLoader;
+import com.spotify.oauth2.utils.configurations.ConfigLoader;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static com.spotify.oauth2.api.Route.*;
+import static com.spotify.oauth2.api.routes.PlayListRoute.*;
 
 public class SpecBuilder {
     public static RequestSpecification getRequestSpec()

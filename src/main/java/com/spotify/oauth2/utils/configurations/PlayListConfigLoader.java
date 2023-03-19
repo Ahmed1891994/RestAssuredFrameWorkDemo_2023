@@ -1,4 +1,4 @@
-package com.spotify.oauth2.utils;
+package com.spotify.oauth2.utils.configurations;
 
 import java.io.IOException;
 import java.util.Properties;

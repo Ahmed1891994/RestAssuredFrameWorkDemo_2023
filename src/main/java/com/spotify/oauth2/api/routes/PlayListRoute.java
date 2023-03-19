@@ -1,6 +1,6 @@
-package com.spotify.oauth2.api;
+package com.spotify.oauth2.api.routes;
 
-public class Route {
+public class PlayListRoute {
     public final static String USERS = "/users/";
     public final static String PLAYLISTS = "/playlists/";
     public final static String API = "/api/";

@@ -1,13 +1,13 @@
-package com.spotify.oauth2.api;
+package com.spotify.oauth2.api.manager;
 
-import com.spotify.oauth2.utils.PlayListConfigLoader;
+import com.spotify.oauth2.utils.configurations.PlayListConfigLoader;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.time.Instant;
 import java.util.HashMap;
 
-import static com.spotify.oauth2.api.SpecBuilder.getResponseSpec;
+import static com.spotify.oauth2.api.manager.SpecBuilder.getResponseSpec;
 import static io.restassured.RestAssured.given;
 
 public class TokenManager {
