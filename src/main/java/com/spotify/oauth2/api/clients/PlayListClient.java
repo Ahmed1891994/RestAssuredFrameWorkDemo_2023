@@ -1,6 +1,6 @@
 package com.spotify.oauth2.api.clients;
 
-import com.spotify.oauth2.api.manager.RestResource;
+import com.spotify.oauth2.utils.manager.RestResource;
 import com.spotify.oauth2.api.pojos.playlistpojo.PlayListRoot;
 import com.spotify.oauth2.utils.configurations.PlayListConfigLoader;
 import io.qameta.allure.Step;
@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 
 import static com.spotify.oauth2.api.routes.PlayListRoute.PLAYLISTS;
 import static com.spotify.oauth2.api.routes.PlayListRoute.USERS;
-import static com.spotify.oauth2.api.manager.TokenManager.GetToken;
+import static com.spotify.oauth2.utils.manager.TokenManager.GetToken;
 
 public class PlayListClient {
     @Step("posting")

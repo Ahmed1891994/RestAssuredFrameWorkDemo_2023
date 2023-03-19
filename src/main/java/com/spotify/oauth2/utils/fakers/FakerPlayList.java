@@ -1,4 +1,4 @@
-package com.spotify.oauth2.utils.Fakers;
+package com.spotify.oauth2.utils.fakers;
 
 import com.github.javafaker.Faker;
 

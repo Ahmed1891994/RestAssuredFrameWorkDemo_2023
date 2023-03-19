@@ -1,4 +1,4 @@
-package com.spotify.oauth2.api.manager;
+package com.spotify.oauth2.utils.manager;
 
 import com.spotify.oauth2.utils.configurations.ConfigLoader;
 import io.qameta.allure.restassured.AllureRestAssured;

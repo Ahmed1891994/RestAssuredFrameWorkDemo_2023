@@ -5,7 +5,7 @@ import com.spotify.oauth2.api.clients.PlayListClient;
 import com.spotify.oauth2.api.pojos.playlisterror.PlayListError;
 import com.spotify.oauth2.api.pojos.playlistpojo.PlayListRoot;
 import com.spotify.oauth2.utils.configurations.DataLoader;
-import com.spotify.oauth2.utils.Fakers.FakerPlayList;
+import com.spotify.oauth2.utils.fakers.FakerPlayList;
 import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -27,7 +27,7 @@ public class PlaylistTests {
     }
     @Story("Handling Playlist Endpoint")
     @Description("Create a new Playlist")
-    @Test
+    @Test(groups = {"regression","Playlist"})
     public void CreatePlaylist()
     {
         PlayListRoot playlistrequest =PlaylistBuilder(FakerPlayList.getName(),FakerPlayList.getDescription(),false);
@@ -43,7 +43,7 @@ public class PlaylistTests {
     }
     @Story("Handling Playlist Endpoint")
     @Description("Get a specific Playlist")
-    @Test
+    @Test(groups = {"regression","Playlist"})
     public void GetPlaylist()
     {
         Response response = PlayListClient.Get(DataLoader.getInstance().getPlayListId());
@@ -57,7 +57,7 @@ public class PlaylistTests {
     }
     @Story("Handling Playlist Endpoint")
     @Description("Updating a specific Playlist")
-    @Test
+    @Test(groups = {"regression","Playlist"})
     public void UpdatePlaylist()
     {
         PlayListRoot playlistrequest =PlaylistBuilder("Updated " + FakerPlayList.getName(),"Updated " +  FakerPlayList.getDescription(),false);
@@ -66,7 +66,7 @@ public class PlaylistTests {
     }
     @Story("Handling Playlist Endpoint")
     @Description("Creating Playlist Using EmptyName it should return 400 as status code")
-    @Test
+    @Test(groups = {"regression","Playlist"})
     public void VerifyStatusCode400WhenCreatingPlaylistUsingEmptyName()
     {
         PlayListRoot playlistrequest =PlaylistBuilder(null,FakerPlayList.getDescription(),true);
@@ -78,7 +78,7 @@ public class PlaylistTests {
     }
     @Story("Handling Playlist Endpoint")
     @Description("Creating Playlist Using Wrong Access Token it should return 401 as status code")
-    @Test
+    @Test(groups = {"regression","Playlist"})
     public void VerifyStatusCode401WhenCreatingPlaylistUsingWrongAccessToken()
     {
         PlayListRoot playlistrequest =PlaylistBuilder(FakerPlayList.getName(),FakerPlayList.getDescription(),false);

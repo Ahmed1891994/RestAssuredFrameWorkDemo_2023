@@ -1,10 +1,10 @@
-package com.spotify.oauth2.api.manager;
+package com.spotify.oauth2.utils.manager;
 
 import io.restassured.response.Response;
 
 import java.util.HashMap;
 
-import static com.spotify.oauth2.api.manager.SpecBuilder.*;
+import static com.spotify.oauth2.utils.manager.SpecBuilder.*;
 import static io.restassured.RestAssured.given;
 
 public class RestResource {

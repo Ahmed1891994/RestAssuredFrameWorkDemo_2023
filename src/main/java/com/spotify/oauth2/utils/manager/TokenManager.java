@@ -1,4 +1,4 @@
-package com.spotify.oauth2.api.manager;
+package com.spotify.oauth2.utils.manager;
 
 import com.spotify.oauth2.utils.configurations.PlayListConfigLoader;
 import io.restassured.http.ContentType;
@@ -7,7 +7,6 @@ import io.restassured.response.Response;
 import java.time.Instant;
 import java.util.HashMap;
 
-import static com.spotify.oauth2.api.manager.SpecBuilder.getResponseSpec;
 import static io.restassured.RestAssured.given;
 
 public class TokenManager {
@@ -45,7 +44,7 @@ public class TokenManager {
                 formParams(parameters).
                 log().all().
             when().post("/api/token").
-            then().spec(getResponseSpec()).
+            then().spec(SpecBuilder.getResponseSpec()).
                 extract().
                 response();
 
