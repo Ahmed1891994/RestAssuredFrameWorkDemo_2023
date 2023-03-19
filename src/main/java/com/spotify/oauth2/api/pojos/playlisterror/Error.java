@@ -1,5 +1,5 @@
 
-package com.spotify.oauth2.pojos.playlistpojo;
+package com.spotify.oauth2.api.pojos.playlisterror;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -10,21 +10,33 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ExternalUrls {
+public class Error {
 
-    @JsonProperty("spotify")
-    private String spotify;
+    @JsonProperty("status")
+    private Integer status;
+    @JsonProperty("message")
+    private String message;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    @JsonProperty("spotify")
-    public String getSpotify() {
-        return spotify;
+    @JsonProperty("status")
+    public Integer getStatus() {
+        return status;
     }
 
-    @JsonProperty("spotify")
-    public void setSpotify(String spotify) {
-        this.spotify = spotify;
+    @JsonProperty("status")
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    @JsonProperty("message")
+    public String getMessage() {
+        return message;
+    }
+
+    @JsonProperty("message")
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @JsonAnyGetter

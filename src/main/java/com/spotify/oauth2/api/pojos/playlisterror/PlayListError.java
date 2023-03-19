@@ -1,5 +1,5 @@
 
-package com.spotify.oauth2.pojos.playlisterror;
+package com.spotify.oauth2.api.pojos.playlisterror;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

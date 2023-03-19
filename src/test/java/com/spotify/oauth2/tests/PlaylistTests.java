@@ -2,8 +2,8 @@ package com.spotify.oauth2.tests;
 
 
 import com.spotify.oauth2.api.clients.PlayListClient;
-import com.spotify.oauth2.pojos.playlisterror.PlayListError;
-import com.spotify.oauth2.pojos.playlistpojo.PlayListRoot;
+import com.spotify.oauth2.api.pojos.playlisterror.PlayListError;
+import com.spotify.oauth2.api.pojos.playlistpojo.PlayListRoot;
 import com.spotify.oauth2.utils.configurations.DataLoader;
 import com.spotify.oauth2.utils.Fakers.FakerPlayList;
 import io.qameta.allure.*;
