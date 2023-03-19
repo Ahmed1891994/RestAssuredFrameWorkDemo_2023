@@ -10,7 +10,7 @@ public class DataLoader {
     {
         try {
             PropertiesFileHandler prophandler = new PropertiesFileHandler();
-            prop = prophandler.loadProperties("/src/test/resources/data.properties");
+            prop = prophandler.loadProperties("/src/main/resources/data.properties");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

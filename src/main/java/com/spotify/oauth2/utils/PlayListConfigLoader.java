@@ -10,7 +10,7 @@ public class PlayListConfigLoader {
     {
         try {
             PropertiesFileHandler prophandler = new PropertiesFileHandler();
-            prop = prophandler.loadProperties("/src/test/resources/configuration.properties");
+            prop = prophandler.loadProperties("/src/main/resources/configuration.properties");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

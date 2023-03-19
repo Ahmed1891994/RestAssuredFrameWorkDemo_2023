@@ -10,7 +10,7 @@ public class ConfigLoader {
     {
         try {
             PropertiesFileHandler prophandler = new PropertiesFileHandler();
-            prop = prophandler.loadProperties("/src/test/resources/" + System.getProperty("env", "dev") + ".properties");
+            prop = prophandler.loadProperties("/src/main/resources/" + System.getProperty("env", "dev") + ".properties");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
